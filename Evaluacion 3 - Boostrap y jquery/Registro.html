@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Bros</title>
+    <link rel="icon" href="Imagenes/Champinonpng.png">
+    <link rel="stylesheet" href="Diseño/bootstrap.min.css">
+    <link rel="stylesheet" href="Diseño/estilos.css">
+    
+</head>
+<body>
+
+ 
+  <audio autoplay neverend>
+    <source src="Audio/SuperMarioBrosTheme.mp3" type="audio/mp3">
+  </audio>
+
+    <nav class="navbar navbar-expand-lg navbar-red bg-red" style="background-color: #8f0303;">
+        <div class="container-fluid">
+          <a class="navbar-brand" type="icon" src="/Imagenes/Champinonpng.png" href="#">Github</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="InicioSesion.html">Inicio de Sesion</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container my-3">
+
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 py-4 bgwhite" style="background-color: rgba(3, 1, 121, 0.781);">
+            <h2>Registrate</h2>
+            <form action="InicioSesion.html" class="py-3" id="formulario">
+              
+              <div class="mb-3">
+    
+                <label for="user" class="form-label">Ingrese el Usuario</label>
+                <input type="text" class="form-control" id="user" name="user" required />
+                <span class="pmd-textfield-focused"></span>
+
+    
+              </div>
+              <div class="mb-3">
+
+                  <label for="email" class="form-label">Ingrese Correo</label>
+                  <input type="email" name="email" id="email" class="form-control" required/>
+                  <span class="pmd-textfield-focused"></span>
+
+
+              </div>
+              <div class="mb-3">
+
+                  <label  for="password" class="form-label">Ingrese la Contraseña</label>
+                  <input type="password" class="form-control" name="password" id="password" required/>
+                  <span class="pmd-textfield-focused"></span>
+
+              </div>
+            
+              <div class="mb-3">
+                  <label class="form-label" for="date">Fecha de Nacimiento</label>
+                  <input type="date" name="date" id="date" class="form-control" required/>
+                  <span class="pmd-textfield-focused"></span>
+
+              </div>
+
+              <div class="d-grid gap-2">
+
+                  <button class="btn btn-success btn-toolbar " type="submit">Aceptar</button>
+                  <button type="reset" class="btn btn-secondary btn-toolbar" id="limpiar">Limpiar</button>
+              </div>
+              
+    
+            </form>
+          
+            <img id = "moneda" src="Imagenes/MonedaGif.gif"  onclick= "sound.play()"></img>
+            <script src="./moneda.js"></script>
+                  
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 py-4 bgwhite" style="background-color: rgba(3, 1, 121, 0.781);">
+              <h2>Personajes de Mario Bros</h2>
+              <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="Imagenes/Mariopng.png" class="d-block w-100" alt="Mario">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="Imagenes/Luigipng.png" class="d-block w-100" alt="Luigi">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="Imagenes/Bowserpng.png" class="d-block w-100" alt="Bowser">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="Imagenes/peach.png" class="d-block w-100" alt="Peach">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="Imagenes/Wariopng.png" class="d-block w-100" alt="Wario">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="Imagenes/Waluigipng.png" class="d-block w-100" alt="Waluigi">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          
+          </div>
+            
+        </div>
+
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+
+
+      <script src="Librerias/jquery-3.6.0.min.js"></script>
+      <script src="Librerias/js/bootstrap.bundle.js"></script>
+      <script src="Librerias/js/bootstrap.js"></script>
+      <script src="Librerias/jquery.validate.min.js"></script>
+      <script src="/validaciones.js"></script>
+</body>
+</html>

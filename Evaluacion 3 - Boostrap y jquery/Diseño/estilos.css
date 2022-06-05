@@ -1,0 +1,71 @@
+
+/*---------------------------Fondo Pantalla Body----------------------------*/
+
+body{
+    background: url("../Imagenes/FondoPantalla1.png");
+    background-size: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    font-family: "SuperMario256";
+    color: yellow;
+}
+
+.carousel-item{
+
+    background-position: center;
+    background-size: cover;
+}
+
+img{
+    width: 450px;
+    height: 600px;
+    background-position: center;
+    border-radius: 20px;
+    
+}
+
+h2{
+   text-align: center;
+}
+
+footer{
+    text-align: center;
+}
+
+@font-face {
+    font-family: "SuperMario256";
+    src: url("../Fuentes/SuperMario256.ttf");
+    
+}
+
+#moneda{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#vida{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: auto;
+    background-position: center;
+}
+
+#limpiar{
+    text-align: center;
+    vertical-align: middle;
+}
+
+#procesar{
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*--------------------------- Fin Fondo Pantalla Body----------------------------*/
